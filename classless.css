@@ -1,0 +1,256 @@
+/* Classless.css v0.9
+
+Table of Contents:
+ 1. Base Tags
+ 2. Extra Tags
+ 3. Classes 
+*/
+
+/* 1. Base Tags 
+–––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+	margin: 0;
+	/*border: solid 0.1px;*/
+}
+
+/* Reset: basic margins for block elements  */
+* {box-sizing: border-box; border-spacing: 0;}
+header, footer, figure ,table, video, blockquote,
+ul, ol, dl, fieldset, pre, pre > code { 
+	display: block; 
+	margin: 0.5rem 0rem 1rem;
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+	width: 100%; 
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+body { 
+	margin: auto; 
+	max-width: 50rem; 
+	padding: 2rem 0.5rem 0rem; 
+	overflow-x: hidden; 
+}
+
+footer { 
+	margin: 10rem 0rem 0rem; 
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+
+
+/* text */
+:root { font: 13pt 'Open Sans', sans-serif; line-height: 1.5; color: #424456; }
+small, sub, sup { font-size: 75%; }
+
+
+/* headings */
+h1, h2, h3, h4, h5, h6 { 
+	margin: 1.5em 0 0em; 
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.3em 0; 
+}
+h1 { font-size: 2.5em; font-weight: 300; }  
+h2 { font-size: 2.0em; font-weight: 300; } 
+h3 { font-size: 1.5em; font-weight: 400; } 
+h4 { font-size: 1.1em; font-weight: 700; 
+	margin: .5em 0 0em; 
+	margin-top: 0;
+	margin-bottom: 0;
+} 
+h5 { font-size: 1.2em; font-weight: 400; 
+	margin-top: 0.5em;
+	margin-top: 0;
+	margin-bottom: 0; 
+	color: #777; 
+}
+h6 { font-size: 1.0em; font-weight: 700; }
+p strong { color: #424456; font-weight: bold; font-size: 1.0em; }
+
+
+/* lists */
+li, dd { 
+	margin-bottom: 0.5rem; 
+	margin-top: 0;
+	margin-bottom: 0;
+} 
+dt { font-weight: bold; }
+
+
+/* tables */
+td, th {
+  /*padding: 0.5rem 1.5rem;*/
+  padding: 0.5rem 1.0rem;
+  text-align: right;
+  border-bottom: 0.1rem solid #d1d1d1;
+  white-space: nowrap;
+}
+td:first-child, th:first-child { 
+	/*padding-left:  0; */
+	text-align: left; 
+}
+td:last-child,  th:last-child  { 
+	/*padding-right: 0; */
+}
+tr:hover{ background-color: #f4f5f6; }
+
+
+/* figures */
+img { max-width: 100%; }
+figure { text-align: center; }
+figure > img { display: block; 
+	margin: 0.5em auto; 
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+figcaption, caption { color: #777; 
+	margin-bottom: 1rem; 
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+
+
+/*code*/
+pre > code {
+  margin: 0;
+  padding: 0.5rem 1.0rem;
+  border-left: 0.3rem solid #3273dc;
+  background-color: #f4f5f6;
+}
+code, kbd, samp { 
+	padding: 0.3em; background: #f4f5f6; white-space: pre; font-size: 90%;
+}
+
+
+/* links */
+a { color: #0065bd; text-decoration: none; cursor: pointer; }
+a:hover, button:not([disabled]):hover { 
+	color: #00C5bd; 
+	border-color: #00C5bd; 
+}
+
+
+/* forms and inputs */
+textarea, input, button, select { 
+	border-radius: .3rem; border: .1rem solid #d1d1d1; padding: 0.6rem; outline: none; 
+	margin: 4px;
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+button { 
+	padding: 0.7rem 1rem; cursor: pointer; font-weight: bold; letter-spacing: 0.1rem; color: #0065bd; background-color: #f4f5f6; border: .1rem solid #0065bd; 
+	margin: 4px;
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+
+input[type=range]{ vertical-align: middle;}
+
+/* Forms */
+
+/*input, select, textarea {font-size: 1em; color:var(--c4); background: var(--c2); border: 0; padding: 0.6em}*/
+
+/*button, input[type=submit], input[type=reset], input[type="button"] { -webkit-appearance: none; font-size: 1em; display: inline-block; color: var(--c5); background: var(--c1);  border: 0; margin: 4px;  padding: 0.6em; cursor: pointer; text-align: center}
+
+button:hover, button:focus, input:hover, textarea:hover, select:hover {opacity: 0.8}*/
+
+/* misc */
+blockquote{ border-left: 0.3rem solid #d1d1d1; padding: 1rem 1.5rem; }
+hr { border: 0; border-top: 0.1rem solid #d1d1d1; }
+
+
+
+
+/* 2. Extra Tags 
+–––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Extra: non-clashing headings */
+h1+h2, h2+h3, h3+h4, h4+h5, h5+h6 { 
+	margin-top: 0.5em; 
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+
+
+/* Extra: side menu */
+main aside { 
+	position: absolute; 
+	margin-left: 50.5rem; 
+	max-width: 10rem; 
+	font-size: smaller; 
+}
+@media (max-width: 73rem) { 
+	main aside { 
+		position: relative; 
+		margin: 1rem 0; 
+/*		margin-top: 0;
+		margin-bottom: 0;*/
+	} 
+}
+
+
+/* Extra: navbar  */
+body nav { 
+	width: 100%; min-height: 3rem;
+	background-color: #f4f5f6; 
+	border-bottom: solid 0.1rem #d1d1d1; 
+}
+body > nav { position: fixed; top: 0; left: 0; }
+nav ul:first-child { 
+	list-style-type: none;
+	margin: auto; 
+	max-width: 50rem;
+	padding: 0 0.5rem;
+	overflow: visible;
+}
+nav ul:first-child > li { 
+	display: inline-block;
+	margin: 0;
+	padding: 0.8rem 1.0rem;
+	position: relative;
+	float: left; 
+}
+nav ul:first-child > li:first-child { padding-left: 0; }
+nav ul > li > ul { 
+	display: none; 
+	width: auto;
+	position: absolute;
+	padding: 1.0rem 2.5rem 0rem;
+	background-color: #f4f5f6;
+	z-index: 2;
+}
+nav ul > li > ul > li { white-space: nowrap; } 
+nav ul > li:hover > ul { display: block; }
+nav+main, nav+header { 
+	/*margin-top: 3rem; */
+	margin-top: 1.5rem; 
+	/*margin-top: 0;*/
+	margin-bottom: 0;
+}
+
+
+/* Extra: forms and inputs advanced styling */
+fieldset { border-radius: 0rem; border: .1rem solid #d1d1d1; }
+textarea:focus, input:not([type=checkbox]):not([type=radio]):hover, select:hover{
+  border:.1rem solid #00C5bd;
+}
+textarea:focus, input:not([type=checkbox]):not([type=radio]):focus{
+	border:.1rem solid #3273dc;
+	box-shadow: 0 0 5px #3273dc;
+}
+button[disabled]{ color: #777; border-color: #d1d1d1; }
+
+
+
+/* misc */ 
+q:before { content: "\201C"; } q q:before { content: "\2018"; }
+q:after  { content: "\201D"; } q q:after  { content: "\2019"; }
+summary { font-weight: bold; cursor: pointer; 
+	margin: 0.5rem 0;
+/*	margin-top: 0;
+	margin-bottom: 0;*/
+}
+time{ color: #777; }
+mark{ background-color: transparent; color: #007c30; text-decoration: underline solid #007c30 }
